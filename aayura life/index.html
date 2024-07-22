@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aayura life</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+  <meta charset="utf-8">
+  <title>Shopping cart</title>
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Duru+Sans|Istok+Web">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <div class="wrap">
+</div>
+</header>
+
+
+</head>
+<body>
+    
+<!--24 Jan 2023 -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <iframe src="appointment.html"></iframe>
+  </div>
+</div>
+
+
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="logo.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-menu" id="menu-btn"></div>
+    </div>
+    
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <div class="simplecart_area">
+      <div class="simplecart_cart">
+        <span class="showCart">
+      <span class="fa fa-shopping-cart"></span>
+        <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+        <span class="dropdown fa fa-chevron-circle-down"></span>
+        </span>
+        <button class="simpleCart_checkout">Checkout</button>
+        <div id="cartPopover" style="display:none">
+          <div class="simpleCart_items"></div>
+        </div>
+      </div>
+    </div>
+
+    <button class = "button"><a onclick="openNav()" style="text-decoration: none;color:white;">Book an appointment</a></button>
+    
+</header>
+
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>AAYURA LIFE</h3>
+        <p>The Great things about Ayurveda that its treatment always yields Side benefits not side effects</p>
+        <a href="#" class="btn">Get yours now</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/back.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes Aayura Life special?</h3>
+            <p>"Aayurlife is start and a bright door to all the questions and problems people have been facing all these years.The name itself has its own great meaning of giving a light in life and providing ease to the betterment.
+                Possibly occupying and making all the things work well and making all the worst parts good is the key to a good health and mind."</p>
+            <p>"We believe in repairing your soul body mind in a proportion ratio together so that we can make you feel what you want and give you what you had at the time you were born healthy. Ayurved ensures giving a life more than 100 years by constructing your basic module the strongest so you live the fullest.
+                We together form an unity of wellness where we make sure to bring life you always wanted with to live for and to die for."</p>
+          
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- product section starts-->
+<h1 class="heading"> our <span>products</span> </h1>
+
+<div class="site-container"></div>
+  
+
+  <div class="site-inner">
+    <div class="wrap">
+
+      <div id="products" class="products">
+
+        <script id="hr-template" type="text/x-handlebars-template">
+          <div class="column">
+            <div class="simpleCart_shelfItem item">
+              <div class="item_image"><img src="{{cells.Image}}"></div>
+              <h2 class="item_name">{{cells.Name}}</h2>
+              <div class="item_description">{{cells.Description}}</div>
+              <div style="margin-top:10px;">
+                <span class="item_price">${{cells.Price}}</span>
+                <button href="javascript:;" class="item_add">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </script>
+
+      </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/simpleCart.min.js"></script>
+  <script src="js/handlebars.min.js"></script>
+  <script src="js/sheetrock.min.js"></script>
+  <script src="js/main.js"></script>
+<!-- products section ends -->
+
+
+
+<!-- FAQ section starts -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faq.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   
+<section class="FAQ" id="FAQ">
+
+    <div class="containerFluid">
+        <h2 class="text-center text-uppercase mb-5">Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>1. Is Ayurvedic treatment suitable for all types of diseases? </h5>
+        </div>
+        <div class="panel">
+          <p>
+            Yes, of course, It is suitable for all type of diseases but depending on the depths of the disease the time to cure varies.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>2. Does ayurved suit everyone? </h5>
+        </div>
+        <div class="panel">
+          <p>
+            Yes, it suits to one and all.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>3. Is ayurveda permanent solution for all problems?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Yes, we treat people with all diseases from their roots and clear up ending with all the system based cure.
+          </p>
+        </div>
+      
+        <div class="accordion">
+          <div class="icon"></div>
+          <h5>4. Is pathya necessary for the treatment?</h5>
+        </div>
+        <div class="panel">
+          <p>
+            Yes! Following pathya with medications will make it effect fast and give you results sooner.
+          </p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>5. How much time is required to cure over one disease?</h5>
+          </div>
+          <div class="panel">
+            <p>
+                We cannot define an exact time frame, it depends upon person & his body metabolism.
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>6. What does vikruti mean?</h5>
+          </div>
+          <div class="panel">
+            <p>
+                Vikruti is your current imbalance, and Prakruti is your basic constitution you were conceived with.
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>7. Where does Ayurvedic medicine come from?</h5>
+          </div>
+          <div class="panel">
+            <p>
+                Nature! Ayurveda remedies are all based on the concept that you can eat your therapies.
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>8. What is the Ayurvedic treatment for arthritis?</h5>
+          </div>
+          <div class="panel">
+            <p>
+                *There is usually ama or toxins and poor digestive fire at the root of arthritis. Panchakarma is generally advised because of the toxins. Treatment depends on the doshic imbalance associated with arthritis.
+            </p><p>
+                *If Vata is primarily involved then stiffness, pain, and dryness and we are using warm cooked moderately spiced foods, haritaki, castor oil internally/externally, and possibly yogaraj guggulu or simhanada guggulu.
+            </p><p>    
+                *If Pitta is primarily involved, then there is inflammation with burning sensations and we using greens in the diet, cooling spices, herbs that add moist and cool properties, amalaki, and possibly kaishore guggulu.
+            </p><p>   
+                *If Kapha is primarily involved, then there is swelling and water retention and we are using hot pungent spices on warm cooked foods, bibhitaki, and possibly diuretics triphala guggulu or punarnava guggulu or simhanada guggulu.
+                Yoga is helpful for all arthritic conditions.
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="icon"></div>
+            <h5>9. What are ayurvedic treatments?</h5>
+          </div>
+          <div class="panel">
+            <p>
+                There are many treatments in the Ayurvedic toolbox for rebalancing health. They include:
+
+                Lifestyle changes like going to bed at a regular time
+                Diet changes like eating more warm foods or oils or greens
+                Herbs – in many forms, loose powder, capsules, teas, medicated ghee/oil, tinctures, honey balls.
+                Body treatments
+                PanchaKarma – deep cleansing and rejuvenation process
+                Yoga, Meditation
+                Aromatherapy, Color Therapy.
+            </p>
+          </div>
+      </div>
+
+      <script src="faq.js"></script>
+</section>
+  </body>
+</html>
+<!-- FAQ section ends -->
+
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/aayuralife/" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/aayuralife/?igshid=YmMyMTA2M2Y%3D" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/aayura-life/" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">products</a>
+        <a href="#">FAQ</a>
+        <a href="contact.html" target="_blank">contact</a>
+        
+    </div>
+
+   
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
